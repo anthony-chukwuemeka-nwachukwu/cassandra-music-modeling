@@ -23,7 +23,7 @@ create_artist_song_length = ("""
         artist text,
         song text,
         length float,
-        PRIMARY KEY (sessionId, itemInSession, song)
+        PRIMARY KEY (sessionId, itemInSession)
     );
 """)
 
