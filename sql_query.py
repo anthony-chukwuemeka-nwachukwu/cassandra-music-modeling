@@ -36,7 +36,7 @@ create_artist_song_user = ("""
         song text,
         firstName text,
         lastName text,
-        PRIMARY KEY (sessionId, userId, itemInSession)
+        PRIMARY KEY ((sessionId, userId), itemInSession)
     );
 """)
 
