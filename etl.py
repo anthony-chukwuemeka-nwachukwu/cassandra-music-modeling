@@ -108,7 +108,7 @@ def insert_data_first_last_song(file, query, session):
         csvreader = csv.reader(f)
         next(csvreader)  # skip header
         for line in csvreader:
-            session.execute(query, (int(line[10]), line[9], line[1], line[4]))
+            session.execute(query, (line[9], int(line[10]), line[1], line[4]))
 
 
 def main():
@@ -127,8 +127,8 @@ def main():
     print("Connection Made")
 
     # Drop and Create Tables
-    # for q in drop_table_queries:
-    #     create_drop_table(q, session)
+    for q in drop_table_queries:
+        create_drop_table(q, session)
     print("Dropped Tables")
     for q in create_table_queries:
         create_drop_table(q, session)
