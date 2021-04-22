@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../../:\Users\Asus\Documents\Education\Online Courses\Data Engineer Udacity\Projects\Project 1\Modeling Music Event Data with Apache Cassandra\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
