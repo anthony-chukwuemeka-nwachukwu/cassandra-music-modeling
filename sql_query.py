@@ -42,8 +42,8 @@ create_artist_song_user = ("""
 
 create_first_last_song = ("""
     CREATE TABLE IF NOT EXISTS first_last_song(
-        userId int,
         song text,
+        userId int,
         firstName text,
         lastName text,
         PRIMARY KEY (song, userId)
@@ -78,8 +78,8 @@ insert_artist_song_user = ("""
 
 insert_first_last_song = ("""
     INSERT INTO first_last_song(
-        userId,
         song,
+        userId,
         firstName,
         lastName
 )
